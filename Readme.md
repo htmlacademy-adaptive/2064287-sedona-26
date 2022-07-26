@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Margarita Yakubovskaya](https://up.htmlacademy.ru/adaptive/26/user/2064287).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien)
 
 ---
 

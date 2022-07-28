@@ -10,7 +10,7 @@
   <header class="main-header">
     <h1 class="visually-hidden">Сайт о каньоне Седона</h1>
     <a class="main-header__logo" href="#">
-      <img class="main-header__logo-image" src="./source/img/logo-Sedona.jpg" width="185" height="96"
+      <img class="main-header__logo-image" src="/source/img/logo-Sedona.jpg" width="185" height="96"
         alt="Логотип сайта Седона.">
     </a>
     <nav class="main-nav">
@@ -19,100 +19,101 @@
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--current">
-          <a>Главная
+          <a class="main-nav__link" href="#">Главная
           </a>
         </li>
-        <li class="main-nav__item main-nav__item--current">
-          <a>Фото и видео
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Фото и видео
           </a>
         </li>
-        <li class="main-nav__item main-nav__item--current">
-          <a>Форма Отзыва
+        <li class="main-nav__item ">
+          <a class="main-nav__link" href="form.html">Форма Отзыва
           </a>
         </li>
-        <li class="main-nav__item main-nav__item--current">
-          <a>HTML ACADEMY
+        <li class="main-nav__item ">
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY
           </a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="main-container">
-    <section class="welcome">
+    <section class="main-container__welcome welcome">
       <h2 class="visually-hidden">Добро пожаловать в великолепный каньон Седона!</h2>
-      <img class="welcome__image" src="./img/welcome.svg" width="" height="" alt="Добро пожаловать в Седону!">
+      <img class="welcome__image" src="/source/img/welcome.svg" width="" height="" alt="Добро пожаловать в Седону!">
     </section>
-    <section class="advantages">
-      <h2 class="visually-hidden">Преимузества каньона Седона</h2>
+    <section class="main-container__advantages advantages">
+      <h2 class="visually-hidden">Преимущества каньона Седона</h2>
       <p class="advantages__subtitle advantages__subtitle--main">СЕДОНА — небольшой  городок в АРИЗОНЕ,  зАСЛУЖИвающий
         большего!</p>
-      <p class="advantages__subtitle"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="advantages__subtitle advantages__subtitle--secondary"> Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ol class="advantages__list">
         <li class="advantages__item">
-          <h3 class="advantages__title">НАСТОЯЩИЙ ГОРОДОК </h3>
+          <h3 class="advantages__subtitle advantages__subtitle--main advantages__subtitle--another-background">НАСТОЯЩИЙ ГОРОДОК </h3>
           <span class="advantages__order">- №1 -</span>
-          <p class="advantages__subtitle ">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          <p class="advantages__subtitle advantages__subtitle--secondary advantages__subtitle--another-background">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола </h3>
+          <h3 class="advantages__subtitle advantages__subtitle--main advantages__subtitle--another-background">ТАМ ЕСТЬ Мост дьявола </h3>
           <span class="advantages__order">- №2 -</span>
-          <p class="advantages-numbered-item__subtitle ">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <p class="advantages-numbered-item__subtitle advantages__subtitle--secondary advantages__subtitle--another-background">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ </h3>
+          <h3 class="advantages__subtitle advantages__subtitle--main">НЕБОЛЬШАЯ ПЛОЩАДЬ </h3>
           <span class="advantages__order">- №3 -</span>
-          <p class="advantages__subtitle ">ВСЕ интересные места находятся очень близко</p>
+          <p class="advantages__subtitle advantages__subtitle--secondary">ВСЕ интересные места находятся очень близко</p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title">КРАСИВАЯ ДОРОГА </h3>
+          <h3 class="advantages__subtitle advantages__subtitle--main">КРАСИВАЯ ДОРОГА </h3>
           <span class="advantages__order">- №4 -</span>
-          <p class="advantages__subtitle">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА  совсем НЕ СКУЧНО!</p>
+          <p class="advantages__subtitle advantages__subtitle--secondary">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА  совсем НЕ СКУЧНО!</p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title">МАЛО ТУРИСТОВ </h3>
+          <h3 class="advantages__subtitle advantages__subtitle--main">МАЛО ТУРИСТОВ </h3>
           <span class="advantages__order">- №5 -</span>
-          <p class="advantages__subtitle">Большинство едет в гранд каньон и толпится там</p>
+          <p class="advantages__subtitle advantages__subtitle--secondary">Большинство едет в гранд каньон и толпится там</p>
         </li>
       </ol>
-      <ul class="advantages__menu">
+      <ul class="advantages__menu menu">
         <li class="menu__item">
-          <h3 class="menu__title">Жилье</h3>
+          <h3 class="menu__subtitle menu__subtitle--main">Жилье</h3>
           <img class="menu__image" src="" width="" height="" alt="Жилье.">
-          <p class="menu__subtitle">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <p class="menu__subtitle menu__subtitle--secondary">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li class="menu__item">
-          <h3 class="menu__title">ЕДА</h3>
+          <h3 class="menu__subtitle menu__subtitle--main">ЕДА</h3>
           <img class="menu__image" src="" width="" height="" alt="Еда.">
-          <p class="menu__subtitle">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <p class="menu__subtitle menu__subtitle--secondary">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
         </li>
         <li class="menu__item">
-          <h3 class="menu__title">СУВЕНИРЫ</h3>
+          <h3 class="menu__subtitle menu__subtitle--main">СУВЕНИРЫ</h3>
           <img class="menu__image" src="" width="" height="" alt="Сувениры.">
-          <p class="menu__subtitle">Не только китайского, но и местного производства!</p>
+          <p class="menu__subtitle menu__subtitle--secondary">Не только китайского, но и местного производства!</p>
         </li>
       </ul>
       <img class="advantages__image" src="" width="" height="" alt="Вид на здание.">
       <img class="advantages__image" src="" width="" height="" alt="Вид на каньон.">
     </section>
-    <section class="search-hotels">
+    <section class="main-container--search-hotels seacrh-hotels">
       <h2 class="visually-hiden">Поиск гостиницы</h2>
       <p class="search-hotels__title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
       <span class="search-hotels__discription">Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</span>
       <a class="search-hotels__link" href="#">Найти Гостиницу</a>
     </section>
-    <section class="map-container">
+    <section class="main-container__map map">
       <h2 class="visually-hidden">Карта с месторасположением каньона Седона</h2>
-      <a class="map-container__link" href="#">
+      <a class="map__link" href="#">
         <img src="" width="" height="" alt="Карта с местностью.">
       </a>
     </section>
   </main>
   <footer class="main-footer">
-    <p class="main-footer__text">#visitSEDONA</p>
+    <p class="main-footer__text">#VISITSEDONA</p>
     <ul class="main-footer__social-list social-list">
-      <li class="social-item">
-        <a class="social-link social-link__vk" href="https://vk.com/htmlacademy">
+      <li class="social__item">
+        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Ссылка на Вконтакте</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -127,8 +128,9 @@
           </svg>
         </a>
       </li>
-      <li class="social-item">
-        <a class="social-link social-link__telegram" href="https://t.me/htmlacademy">
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Ссылка на Телеграм</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="m22.44 4.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L7.01 13.32l-4.76-1.49c-1.04-.32-1.05-1.03.22-1.53L21.1 3.11c.87-.32 1.62.2 1.34 1.51Z"
@@ -136,8 +138,9 @@
           </svg>
         </a>
       </li>
-      <li class="social-item">
-        <a class="social-link social-link__youtube" href="https://www.youtube.com/user/htmlacademyru">
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Ссылка на YouTube</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M19.18 5H4.81C3.31 5 2 6.3 2 7.8v8.3C2 17.7 3.3 19 4.81 19h14.37A2.8 2.8 0 0 0 22 16.2V7.8c.1-1.5-1.2-2.8-2.8-2.8ZM9.03 15.4V8.6l6.84 3.4-6.84 3.4Z"
@@ -146,7 +149,14 @@
         </a>
       </li>
     </ul>
-
+    <a class="main-footer__made-by made-by" href="https://htmlacademy.ru/intensive/adaptive">
+      <p class="made-by__text">Разработано</p>
+      <svg class="made-by__image" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
+          fill="#000" />
+      </svg>
+    </a>
   </footer>
 
 

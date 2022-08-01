@@ -43,111 +43,111 @@
       <h2 class="visually-hidden">Седона</h2>
       <img class="image-title__sedona" src="/source/img/sedona-text.svg" width="" height="" alt="Седона.">
     </section>
-    <section class="catalog-container--review review">
-      <h2 class="photos-videos__subtitle photos-videos__subtitle--main ">Оставьте свой отзыв</h2>
-      <p class="photos-videos__subtitle photos-videos__subtitle--secondary">НПомогите нашим отелям стать лучше! оставьте
+    <section class="catalog-container__review review">
+      <h2 class="review__subtitle review__subtitle--main ">Оставьте свой отзыв</h2>
+      <p class="review__subtitle review__subtitle--secondary">НПомогите нашим отелям стать лучше! оставьте
         отзыв о них, а также о посещенных вами достопримечательностях.</p>
       <form class="catalog-container__review-form review-form" action="https://echo.htmlacademy.ru/" method="get">
 
-        <fieldset class="review-form__author-name author-name ">
-          <legend class="rauthor-name__title">Представьтесь:</legend>
-          <label class="author-name__subtitle">ИМЯ*:
-            <input class="author-name__input input--name" type="text" value="Пётр" id="name" required>
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__legend">Представьтесь:</legend>
+          <label class="review-form__label">ИМЯ*:
+            <input class="review-form__input review-form__input--name" type="text" value="Пётр" id="name" required>
           </label>
-          <label class="author-name__subtitle">ФАМИЛИЯ*:
-            <input class="author-name__input input--surname" type="text" value="Пустота" id="surname" required>
+          <label class="review-form__label">ФАМИЛИЯ*:
+            <input class="review-form__input review-form__input--surname" type="text" value="Пустота" id="surname" required>
           </label>
-          <label class="author-name__subtitle">Отчество:
-            <input class="author-name__input input--second-name" type="text" value="Викторович" id="second-name">
+          <label class="review-form__label">Отчество:
+            <input class="review-form__input review-form__input--second-name" type="text" value="Викторович" id="second-name">
           </label>
         </fieldset>
 
-        <fieldset class="review-form__contats contacts">
-          <legend class="contacts__title">Контактная информация:</legend>
-          <label class="contacts__subtitle">Контактный телефон*:
-            <input class="contacts__input input--phone" type="tel" id="phone-number" placeholder="Введите телефон"
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__legend">Контактная информация:</legend>
+          <label class="review-form__label">Контактный телефон*:
+            <input class="review-form__input review-form__input--phone" type="tel" id="phone-number" placeholder="Введите телефон"
               required>
           </label>
-          <label class="contacts__subtitle">Электронная почта*:
-            <input class="contacts__input input--email" type="email" id="email" placeholder="Введите e-mail" required>
+          <label class="review-form__label">Электронная почта*:
+            <input class="review-form__input review-form__input--email" type="email" id="email" placeholder="Введите e-mail" required>
           </label>
         </fieldset>
 
-        <fieldset class="review-form__impression impression">
-          <legend class="impression__title">Вaше oбщее впечатление:</legend>
-          <ul class="impression__list">
-            <li class="impression__item">
-              <label class="impression__subtitle">Скорее положительное
-                <input class="impression__input input--impression" type="radio" name="impression" id="doog-impression"
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__legend">Вaше oбщее впечатление:</legend>
+          <ul class="review-form__list">
+            <li class="review-form__item">
+              <label class="review-form__label">Скорее положительное
+                <input class="review-form__input review-form__input--radio" type="radio" name="impression" id="doog-impression"
                   value="good-impression" checked>
               </label>
             </li>
 
-            <li class="impression__item">
-              <label class="impression__subtitle">Скорее отрицательное
-                <input class="impression__input input--impression" type="radio" name="impression" id="bad-impression"
+            <li class="review-form__item">
+              <label class="review-form__label">Скорее отрицательное
+                <input class="review-form__input review-form__input--radio" type="radio" name="impression" id="bad-impression"
                   value="bad-impression">
               </label>
             </li>
 
-            <li class="impression__item">
-              <label class="impression__subtitle">Затрудняюсь ответить
-                <input class="impression__input input--impression" type="radio" name="impression" id="mixed-impression"
+            <li class="review-form__item">
+              <label class="review-form__label">Затрудняюсь ответить
+                <input class="review-form__input review-form__input--radio" type="radio" name="impression" id="mixed-impression"
                   value="mixed-impression">
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="review-form__attractions attractions">
-          <legend class="attractions__title">посещенные достопримечательности:</legend>
-          <ul class="attractions__list">
-            <li class="attractions__item">
-              <label class="attractions__subtitle">Мост Дьявола
-                <input class="attractions__input input--attractions" type="checkbox" name="attractions" id="bridge"
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__legend">посещенные достопримечательности:</legend>
+          <ul class="review-form__list">
+            <li class="review-form__item">
+              <label class="review-form__label">Мост Дьявола
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions" id="bridge"
                   value="bridge" checked>
               </label>
             </li>
 
-            <li class="attractions__item">
-              <label class="attractions__subtitle"> Гора-Колокол
-                <input class="attractions__input input--attractions" type="checkbox" name="attractions" id="mountain"
+            <li class="review-form__item">
+              <label class="review-form__label"> Гора-Колокол
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions" id="mountain"
                   value="mountain" checked>
               </label>
             </li>
 
-            <li class="attractions__item">
-              <label class="attractions__subtitle"> Слайд-парк
-                <input class="attractions__input input--attractions" type="checkbox" name="attractions" id="park"
+            <li class="review-form__item">
+              <label class="review-form__label"> Слайд-парк
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions" id="park"
                   value="park" checked>
               </label>
             </li>
 
-            <li class="attractions__item">
-              <label class="attractions__subtitle"> Красные скалы
-                <input class="attractions__input input--attractions" type="checkbox" name="attractions" id="rocks"
+            <li class="review-form__item">
+              <label class="review-form__label"> Красные скалы
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions" id="rocks"
                   value="rocks">
               </label>
             </li>
           </ul>
         </fieldset>
         <div class="review-form__discription discription">
-          <label class="discription__title">Опишите свои эмоции:
-            <textarea class="discription__text" name="discription" rows="5"
+          <label class="review-form__label">Опишите свои эмоции:
+            <textarea class="review-form__discription-text" name="discription" rows="5"
               cols="33">Опишите подробно все свои восторги </textarea>
           </label>
         </div>
-        <button class="catalog-container__button-submit button">ОТПРАВИТЬ ОТЗЫВ</button>
-        <span class="catalog-container__explaining">* — обязательные поля</span>
+        <button class="review__button-submit button">ОТПРАВИТЬ ОТЗЫВ</button>
+        <span class="review__explaining">* — обязательные поля</span>
       </form>
     </section>
 
   </main>
   <footer class="main-footer">
     <p class="main-footer__text">#VISITSEDONA</p>
-    <ul class="main-footer__social-list social-list">
-      <li class="social__item">
-        <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+    <ul class="main-footer__socials socials">
+      <li class="socials__item">
+        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Ссылка на Вконтакте</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#a)">
@@ -163,8 +163,8 @@
           </svg>
         </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+      <li class="socials__item">
+        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
           <span class="visually-hidden">Ссылка на Телеграм</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -173,8 +173,8 @@
           </svg>
         </a>
       </li>
-      <li class="social__item">
-        <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+      <li class="socials__item">
+        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Ссылка на YouTube</span>
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path

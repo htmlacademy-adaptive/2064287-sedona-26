@@ -1,48 +1,35 @@
-@import "main-header.less";
-@import "main-nav.less";
-@import "welcome.less";
-@import "advantages.less";
-@import "menu.less";
-@import "image-title.less";
-@import "search-hotels.less";
-@import "main-footer.less";
-@import "socials.less";
-@import "made-by.less";
-@import "review.less";
-@import "review-form.less";
-@import "photos-videos.less";
-@import "product-item.less";
+
+@import "fonts.less";
+@import "blocks/main-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/catalog-container.less";
+@import "blocks/welcome.less";
+@import "blocks/advantages.less";
+@import "blocks/menu.less";
+@import "blocks/image-title.less";
+@import "blocks/search-hotels.less";
+@import "blocks/main-footer.less";
+@import "blocks/socials.less";
+@import "blocks/made-by.less";
+@import "blocks/review.less";
+@import "blocks/review-form.less";
+@import "blocks/photos-videos.less";
+@import "blocks/product-item.less";
 @import "likes-button.less";
-@import "video-container.less";
-
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("/source/fonts/ptsans.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("/source/fonts/ptsansbold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
+@import "blocks/video-container.less";
 
 .body-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
-  color: rgba(0, 0, 0);
   text-transform: uppercase;
-  background: rgba(255, 255, 255);
+  color: rgba(0, 0, 0);
 }
-
 
 .visually-hidden {
   position: absolute;

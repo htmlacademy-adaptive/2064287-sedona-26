@@ -11,17 +11,17 @@
 <body class="body-page">
   <header class="main-header">
     <h1 class="visually-hidden">Сайт о каньоне Седона</h1>
-    <a class="main-header__logo" href="#">
+    <a class="main-header__logo">
       <img class="main-header__logo-image" src="/img/logo-Sedona.jpg" width="185" height="96"
         alt="Логотип сайта Седона.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__main-nav main-nav">
       <button class="main-nav__button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link" href="#">Главная
+          <a class="main-nav__link">Главная
           </a>
         </li>
         <li class="main-nav__item">
@@ -85,30 +85,29 @@
         </li>
       </ol>
       <ul class="advantages__menu menu">
-        <li class="menu__item">
+        <li class="menu__item menu__item--icon-hotels">
           <h3 class="menu__subtitle menu__subtitle--main">Жилье</h3>
-          <img class="menu__image" src="" width="" height="" alt="Жилье.">
           <p class="menu__subtitle menu__subtitle--secondary">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li class="menu__item">
+        <li class="menu__item menu__item--icon-food">
           <h3 class="menu__subtitle menu__subtitle--main">Еда</h3>
-          <img class="menu__image" src="" width="" height="" alt="Еда.">
           <p class="menu__subtitle menu__subtitle--secondary">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
           </p>
         </li>
-        <li class="menu__item">
+        <li class="menu__item menu__item--icon-gifts">
           <h3 class="menu__subtitle menu__subtitle--main">Сувениры</h3>
-          <img class="menu__image" src="" width="" height="" alt="Сувениры.">
           <p class="menu__subtitle menu__subtitle--secondary">Не только китайского, но и местного производства!</p>
         </li>
+        <li class="menu__item menu__item--icon-first">
+        </li>
+        <li class="menu__item menu__item--icon-second">
+        </li>
       </ul>
-      <img class="advantages__image" src="" width="" height="" alt="Вид на здание.">
-      <img class="advantages__image" src="" width="" height="" alt="Вид на каньон.">
     </section>
     <section class="main-container__search-hotels search-hotels">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
-      <p class="search-hotels__title">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-      <span class="search-hotels__subtitle">Укажите предполагаемые даты поездки,
+      <p class="search-hotels__title search-hotels__title--main">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+      <span class="search-hotels__subtitle search-hotels__subtitle--secondary">Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в седоне</span>
       <a class="search-hotels__link button-styles" href="#">Найти Гостиницу</a>
     </section>

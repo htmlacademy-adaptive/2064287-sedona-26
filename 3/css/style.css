@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("/fonts/ptsans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  src: url("/fonts/ptsansbold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.main-header {
+  background: rgba(255, 255, 255);
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.main-nav__item {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  background: rgba(129, 179, 210);
+}
+.main-nav__link {
+  color: rgba(255, 255, 255);
+  text-decoration: none;
+}
+.catalog-container__image-title {
+  padding: 52px 50px 67px;
+}
+.welcome {
+  padding: 90px 19px 80px;
+  background-color: rgba(129, 179, 210, 0.4);
+  background-image: url("/img/background-mountaines.jpg");
+}
+.advantages {
+  padding: 0 19px;
+}
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.advantages__item {
+  background: rgba(214, 214, 214);
+}
+.advantages__item--main {
+  background: rgba(129, 179, 210);
+}
+.advantages__title {
+  margin: 0;
+}
+.advantages__subtitle {
+  margin: 0;
+}
+.advantages__title--main {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.advantages__subtitle--secondary {
+  color: rgba(51, 51, 51);
+}
+.advantages__title--another-background {
+  color: rgba(255, 255, 255);
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu__item--icon-hotels {
+  background: url("/img/index-page/menu-hotels.svg") no-repeat left;
+}
+.menu__item--icon-food {
+  background: url("/img/index-page/menu-food.svg") no-repeat left;
+}
+.menu__item--icon-gifts {
+  background: url("/img/index-page/menu-gifts.svg") no-repeat left;
+}
+.menu__item--icon-first {
+  height: 260px;
+  background: url("/img/index-page/picture-of-hotel.jpg");
+}
+.menu__item--icon-second {
+  height: 260px;
+  background: url("/img/index-page/picture-of-mountaines.jpg");
+}
+.menu__subtitle {
+  margin: 0;
+}
+.menu__subtitle--main {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.menu__subtitle--secondary {
+  color: rgba(51, 51, 51);
+}
+.image-title {
+  background-color: rgba(129, 179, 210, 0.4);
+  background-image: url("/img/background-mountaines.jpg");
+  background-position: 0 -230px;
+}
+.search-hotels {
+  padding: 39px 40px 49px;
+}
+.search-hotels__title {
+  margin: 0;
+}
+.search-hotels__title--main {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.search-hotels__subtitle--secondary {
+  color: rgba(51, 51, 51);
+}
+.main-footer {
+  padding: 38px 77px 23px;
+}
+.main-footer__text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+.socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.socials__item {
+  background: rgba(129, 179, 210);
+}
+.made-by {
+  color: #000000;
+  text-decoration: none;
+}
+.made-by__text {
+  margin: 0;
+}
+.review {
+  padding: 36px 20px 0;
+}
+.review__title {
+  margin: 0;
+}
+.review__subtitle {
+  margin: 0;
+}
+.review__title--main {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.review__subtitle--secondary {
+  color: rgba(51, 51, 51);
+}
+.review__explaining {
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.6);
+}
+.review-form__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  border: none;
+}
+.review-form__legend {
+  padding: 20px 0 24px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.review-form__label {
+  color: rgba(51, 51, 51);
+}
+.review-form__input {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.review-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.review-form__label--button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+.photos-videos {
+  padding: 33px 30px 0;
+}
+.photos-videos__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.photos-videos__title {
+  margin: 0;
+}
+.photos-videos__subtitle {
+  margin: 0;
+}
+.photos-videos__title--main {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.photos-videos__subtitle--secondary {
+  color: rgba(51, 51, 51);
+}
+.product-item__title {
+  margin: 0;
+}
+.product-item__subtitle {
+  margin: 0;
+}
+.product-item__title--main {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.product-item__subtitle--secondary {
+  color: rgba(51, 51, 51);
+  text-transform: none;
+}
+.likes-button__counter {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.video-container {
+  padding: 17px 27px 0;
+}
+.video-container__title {
+  margin: 0;
+}
+.video-container__title--main {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.video-container__subtitle {
+  margin: 0;
+}
+.video-container__subtitle--secondary {
+  color: rgba(51, 51, 51);
+}
+.body-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 320px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.button-styles {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: rgba(255, 255, 255);
+  background: rgba(129, 179, 210);
+}
+/*# sourceMappingURL=style.css.map */

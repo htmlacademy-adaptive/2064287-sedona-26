@@ -4,15 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="./css/style.css" rel="stylesheet">
 </head>
 
 <body class="body-page">
   <header class="main-header">
     <h1 class="visually-hidden">Сайт о каньоне Седона</h1>
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="/source/img/logo-Sedona.jpg" width="185" height="96"
-        alt="Логотип сайта Седона.">
-    </a>
+      <img class="main-header__logo-image" src="./img/logo-Sedona.jpg" width="185" height="96"
+      alt="Логотип сайта Седона.">    </a>
     <nav class="main-nav">
       <button class="main-nav__button" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -40,17 +40,17 @@
   <main class="catalog-container">
     <section class="catalog-container__image-title image-title">
       <h2 class="visually-hidden">Седона</h2>
-      <img class="image-title__sedona" src="/source/img/sedona-text.svg" width="" height="" alt="Седона.">
+      <img class="image-title__sedona" src="./img/sedona-text.svg" width="" height="" alt="Седона.">
     </section>
     <section class="catalog-container__photos-videos photos-videos">
-      <h2 class="photos-videos__subtitle photos-videos__subtitle--main ">Фото и видео</h2>
+      <h2 class="photos-videos__title photos-videos__title--main">Фото и видео</h2>
       <p class="photos-videos__subtitle photos-videos__subtitle--secondary">Не можете решиться на путешествие из-за
         курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <ul class="photos-videos__list">
         <li class="photos-videos__item product-item">
-          <img class="product-item__image" src="" width="" height="" alt="Дорога, закат, горы.">
-          <h3 class="product-item__title product-item__title--size-l">неродные просторы</h3>
-          <p class="product-item__author product-item__author--size-s">Автор фото: Борис</p>
+          <img class="product-item__image" src="./img/catalog/catalog-road.jpg" width="" height="" alt="Дорога, закат, горы.">
+          <h3 class="product-item__title product-item__title--main">неродные просторы</h3>
+          <p class="product-item__subtitle product-item__subtitle--secondary">Автор фото: Борис</p>
           <button class="product-item__likes-button likes-button" type="button">
             <span class="visually-hidden">Отметить "Нравится"</span>
             <span class="likes-button__counter">1350</span>
@@ -58,9 +58,9 @@
         </li>
 
         <li class="photos-videos__item product-item">
-          <img class="product-item__image" src="" width="" height="" alt="Кактус на фоне гор.">
-          <h3 class="product-item__title product-item__title--size-l"> Местная растительность</h3>
-          <p class="product-item__author product-item__author--size-s">Автор фото: Сергей</p>
+          <img class="product-item__image" src="./img/catalog/catalog-cactus.jpg" width="" height="" alt="Кактус на фоне гор.">
+          <h3 class="product-item__title product-item__title--main"> Местная растительность</h3>
+          <p class="product-item__author product-item__subtitle--secondary">Автор фото: Сергей</p>
           <button class="product-item__likes-button likes-button" type="button">
             <span class="visually-hidden">Отметить "Нравится"</span>
             <span class="likes-button__counter">143</span>
@@ -68,9 +68,9 @@
         </li>
 
         <li class="photos-videos__item product-item">
-          <img class="product-item__image" src="" width="" height="" alt="Дорога в горах.">
-          <h3 class="product-item__title product-item__title--size-l"> Дорога на север</h3>
-          <p class="product-item__author product-item__author--size-s">Автор фото: Петр</p>
+          <img class="product-item__image" src="./img/catalog/catalog-road-in-mountains.jpg" width="" height="" alt="Дорога в горах.">
+          <h3 class="product-item__title product-item__title--main"> Дорога на север</h3>
+          <p class="product-item__author product-item__subtitle--secondary">Автор фото: Петр</p>
           <button class="product-item__likes-button likes-button" type="button">
             <span class="visually-hidden">Отметить "Нравится"</span>
             <span class="likes-button__counter">96</span>
@@ -79,23 +79,22 @@
         </li>
 
         <li class="photos-videos__item product-item">
-          <img class="product-item__image" src="" width="" height="" alt="Вид на каньон.">
-          <h3 class="product-item__title product-item__title--size-l"> Мост дьявола</h3>
-          <p class="product-item__author product-item__author--size-s">Автор фото: Антон</p>
+          <img class="product-item__image" src="./img/catalog/catalog-canion.jpg" width="" height="" alt="Вид на каньон.">
+          <h3 class="product-item__title product-item__title--main"> Мост дьявола</h3>
+          <p class="product-item__author product-item__subtitle--secondary">Автор фото: Антон</p>
           <button class="product-item__likes-button likes-button" type="button">
             <span class="visually-hidden">Отметить "Нравится"</span>
             <span class="likes-button__counter">254</span>
-
           </button>
         </li>
       </ul>
     </section>
-    <section class="catalog-container__any-doubts any-doubts">
-      <h2 class="any-doubts__subtitle any-doubts__subtitle--main-subtitle ">Все еще сомневаетесь?</h2>
-      <p class="any-doubts__subtitle any-doubts__subtitle--secondary-subtitle">Смотрите видеопрезентацию и скорее за
+    <section class="catalog-container__video-container video-container">
+      <h2 class="video-container__title video-container__title--main ">Все еще сомневаетесь?</h2>
+      <p class="video-container__subtitle video-container__subtitle--secondary">Смотрите видеопрезентацию и скорее за
         билетами, пока они не подорожали в очередной раз!</p>
-      <a class="any-doubts__link" href="#">
-        <img class="any-doubts__image" src="" width="" height="" alt="Ссылка на видео о каньоне.">
+      <a class="video-container__link" href="#">
+        <img class="video-container__image" src="" width="" height="" alt="Ссылка на видео о каньоне.">
       </a>
     </section>
 

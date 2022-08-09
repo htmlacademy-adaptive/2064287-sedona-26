@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: @background-color-page;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .menu__item--icon-hotels {
@@ -16,16 +21,6 @@
   background: url("../img/index-page/menu-gifts.svg") no-repeat left;
 }
 
-.menu__item--icon-first {
-  height: 260px;
-  background: url("../img/index-page/picture-of-hotel.jpg");
-}
-
-.menu__item--icon-second {
-  height: 260px;
-  background: url("../img/index-page/picture-of-mountaines.jpg");
-}
-
 .menu__subtitle {
   margin: 0;
 }
@@ -37,5 +32,5 @@
 }
 
 .menu__subtitle--secondary {
-  color: rgba(51, 51, 51);
+  color: @text-color-additional;
 }

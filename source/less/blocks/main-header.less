@@ -1,3 +1,34 @@
 .main-header {
-  background: rgba(255, 255, 255);
+  position: relative;
+  display: flex;
+  // height: 56px;
+}
+
+.main-header__main-nav {
+  margin: 17px 20px 17px auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin: 10px;
+  }
+}
+
+.main-nav__button {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__logo-image {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
 }

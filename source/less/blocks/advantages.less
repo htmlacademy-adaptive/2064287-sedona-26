@@ -3,17 +3,115 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-areas: "first second second"
+      "third third third"
+      "fourth fourth  fiveth"
+      "sixth seventh eighth";
+    grid-template-rows: 256px 330px 256px 256px;
+    grid-template-columns: 256px 256px 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-areas: "first second second"
+      "third third third"
+      "fourth fourth  fiveth"
+      "sixth seventh eighth";
+    grid-template-rows: 256px 330px 256px 256px;
+    grid-template-columns: 400px 400px 400px;
+  }
 }
 
 .advantages__item {
-  background: rgba(214, 214, 214);
+  background: @background-color-additional;
+}
+
+.advantages__item--order-first {
+  order: 1;
+
+  @media (min-width: @tablet-width) {
+    grid-area: first;
+  }
+}
+
+.advantages__item--order-second {
+  order: 2;
+
+  @media (min-width: @tablet-width) {
+    grid-area: second;
+  }
+}
+
+.advantages__item--order-third {
+  order: 3;
+
+  @media (min-width: @tablet-width) {
+    grid-area: third;
+  }
+}
+
+.advantages__item--order-fourth {
+  order: 4;
+
+  @media (min-width: @tablet-width) {
+    grid-area: fiveth;
+  }
+}
+
+.advantages__item--order-fiveth {
+  order: 5;
+
+  @media (min-width: @tablet-width) {
+    grid-area: fourth;
+  }
+}
+
+.advantages__item--order-sixth {
+  order: 6;
+
+  @media (min-width: @tablet-width) {
+    grid-area: sixth;
+  }
+}
+
+.advantages__item--order-seventh {
+  order: 7;
+
+  @media (min-width: @tablet-width) {
+    grid-area: seventh;
+  }
+}
+
+.advantages__item--order-eighth {
+  order: 8;
+
+  @media (min-width: @tablet-width) {
+    grid-area: eighth;
+  }
 }
 
 .advantages__item--main {
-  background: rgba(129, 179, 210);
+  background: @background-color-general;
+}
+
+.advantages__item--icon-first {
+  height: 260px;
+  background-image: url("../img/index-page/picture-of-hotel.jpg");
+  background-repeat: no-repeat;
+}
+
+.advantages__item--icon-second {
+  height: 260px;
+  background-image: url("../img/index-page/picture-of-mountaines.jpg");
+  background-repeat: no-repeat;
 }
 
 .advantages__title {
@@ -31,9 +129,9 @@
 }
 
 .advantages__subtitle--secondary {
-  color: rgba(51, 51, 51);
+  color: @text-color-additional;
 }
 
 .advantages__title--another-background {
-  color: rgba(255, 255, 255);
+  color: @text-color-with-background;
 }

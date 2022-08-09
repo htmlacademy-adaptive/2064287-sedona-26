@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="./css/style.css" rel="stylesheet">
 
@@ -12,7 +13,7 @@
   <header class="main-header">
     <h1 class="visually-hidden">Сайт о каньоне Седона</h1>
     <a class="main-header__logo">
-      <img class="main-header__logo-image" src="./img/logo-Sedona.jpg" width="185" height="96"
+      <img class="main-header__logo-image" src="./img/logo-Sedona.svg" width="185" height="96"
         alt="Логотип сайта Седона.">
     </a>
     <nav class="main-header__main-nav main-nav">
@@ -51,58 +52,62 @@
       <p class="advantages__subtitle advantages__subtitle--secondary"> Рассмотрим 5 причин, по которым Седона круче, чем
         гранд каньон!</p>
       <ol class="advantages__list">
-        <li class="advantages__item advantages__item--main">
+        <li class="advantages__item advantages__item--order-first  advantages__item--main">
           <h3 class="advantages__title advantages__title--main advantages__title--another-background">НАСТОЯЩИЙ
             ГОРОДОК </h3>
-          <span class="advantages__order advantages__title--another-background">- №1 -</span>
-          <p class="advantages__subtitle advantages__subtitle--secondary advantages__title--another-background">
+          <span class="advantages__title advantages__title--another-background">- №1 -</span>
+          <p class="advantages__subtitle advantages__subtitle--secondary advantages__subtitle--another-background">
             СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </li>
-        <li class="advantages__item advantages__item--main">
+        <li class="advantages__item advantages__item--order-fourth advantages__item--main">
           <h3 class="advantages__title advantages__title--main advantages__title--another-background">ТАМ ЕСТЬ
             Мост дьявола </h3>
-          <span class="advantages__order advantages__title--another-background">- №2 -</span>
-          <p class="advantages__subtitle advantages__subtitle--secondary advantages__title--another-background">
+          <span class="advantages__title advantages__title--another-background">- №2 -</span>
+          <p class="advantages__subtitle advantages__subtitle--secondary advantages__subtitle--another-background">
             Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--order-sixth">
           <h3 class="advantages__title advantages__title--main">НЕБОЛЬШАЯ ПЛОЩАДЬ </h3>
-          <span class="advantages__order advantages__subtitle--secondary">- №3 -</span>
+          <span class="advantages__subtitle advantages__subtitle--secondary">- №3 -</span>
           <p class="advantages__subtitle advantages__subtitle--secondary">ВСЕ интересные места находятся очень близко
           </p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--order-seventh">
           <h3 class="advantages__title advantages__title--main">КРАСИВАЯ ДОРОГА </h3>
-          <span class="advantages__order advantages__subtitle--secondary">- №4 -</span>
+          <span class="advantages__subtitle advantages__subtitle--secondary">- №4 -</span>
           <p class="advantages__subtitle advantages__subtitle--secondary">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ
             СКУЧНО!</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--order-eighth">
           <h3 class="advantages__title advantages__title--main">МАЛО ТУРИСТОВ </h3>
-          <span class="advantages__order advantages__subtitle--secondary">- №5 -</span>
+          <span class="advantages__subtitle advantages__subtitle--secondary">- №5 -</span>
           <p class="advantages__subtitle advantages__subtitle--secondary">Большинство едет в гранд каньони толпится там
           </p>
         </li>
+        <li class="advantages__item advantages__item--order-third">
+          <ul class="advantages__menu menu">
+            <li class="menu__item menu__item--icon-hotels">
+              <h3 class="menu__subtitle menu__subtitle--main">Жилье</h3>
+              <p class="menu__subtitle menu__subtitle--secondary">Рекомендуем пожить в настоящем мотеле, все как в кино!
+              </p>
+            </li>
+            <li class="menu__item menu__item--icon-food">
+              <h3 class="menu__subtitle menu__subtitle--main">Еда</h3>
+              <p class="menu__subtitle menu__subtitle--secondary">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ
+                разочаруетесь!
+              </p>
+            </li>
+            <li class="menu__item menu__item--icon-gifts">
+              <h3 class="menu__subtitle menu__subtitle--main">Сувениры</h3>
+              <p class="menu__subtitle menu__subtitle--secondary">Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </li>
+        <li class="advantages__item advantages__item--order-second advantages__item--icon-first">
+        </li>
+        <li class="advantages__item advantages__item--order-fiveth advantages__item--icon-second">
+        </li>
       </ol>
-      <ul class="advantages__menu menu">
-        <li class="menu__item menu__item--icon-hotels">
-          <h3 class="menu__subtitle menu__subtitle--main">Жилье</h3>
-          <p class="menu__subtitle menu__subtitle--secondary">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-        </li>
-        <li class="menu__item menu__item--icon-food">
-          <h3 class="menu__subtitle menu__subtitle--main">Еда</h3>
-          <p class="menu__subtitle menu__subtitle--secondary">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!
-          </p>
-        </li>
-        <li class="menu__item menu__item--icon-gifts">
-          <h3 class="menu__subtitle menu__subtitle--main">Сувениры</h3>
-          <p class="menu__subtitle menu__subtitle--secondary">Не только китайского, но и местного производства!</p>
-        </li>
-        <li class="menu__item menu__item--icon-first">
-        </li>
-        <li class="menu__item menu__item--icon-second">
-        </li>
-      </ul>
     </section>
     <section class="main-container__search-hotels search-hotels">
       <h2 class="visually-hidden">Поиск гостиницы</h2>

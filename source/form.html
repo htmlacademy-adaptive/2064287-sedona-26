@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link href="./css/style.css" rel="stylesheet">
 </head>
@@ -11,10 +12,10 @@
   <header class="main-header">
     <h1 class="visually-hidden">Сайт о каньоне Седона</h1>
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="./img/logo-Sedona.jpg" width="185" height="96"
+      <img class="main-header__logo-image" src="./img/logo-Sedona.svg" width="185" height="96"
         alt="Логотип сайта Седона.">
     </a>
-    <nav class="main-nav">
+    <nav class="main-header__main-nav main-nav">
       <button class="main-nav__button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -55,21 +56,24 @@
             <input class="review-form__input review-form__input--name" type="text" value="Пётр" id="name" required>
           </label>
           <label class="review-form__label">ФАМИЛИЯ*:
-            <input class="review-form__input review-form__input--surname" type="text" value="Пустота" id="surname" required>
+            <input class="review-form__input review-form__input--surname" type="text" value="Пустота" id="surname"
+              required>
           </label>
           <label class="review-form__label">Отчество:
-            <input class="review-form__input review-form__input--second-name" type="text" value="Викторович" id="second-name">
+            <input class="review-form__input review-form__input--second-name" type="text" value="Викторович"
+              id="second-name">
           </label>
         </fieldset>
 
         <fieldset class="review-form__fieldset">
           <legend class="review-form__legend">Контактная информация:</legend>
           <label class="review-form__label">Контактный телефон*:
-            <input class="review-form__input review-form__input--phone" type="tel" id="phone-number" placeholder="Введите телефон"
-              required>
+            <input class="review-form__input review-form__input--phone" type="tel" id="phone-number"
+              placeholder="Введите телефон" required>
           </label>
           <label class="review-form__label">Электронная почта*:
-            <input class="review-form__input review-form__input--email" type="email" id="email" placeholder="Введите e-mail" required>
+            <input class="review-form__input review-form__input--email" type="email" id="email"
+              placeholder="Введите e-mail" required>
           </label>
         </fieldset>
 
@@ -78,22 +82,22 @@
           <ul class="review-form__list">
             <li class="review-form__item">
               <label class="review-form__label review-form__label--button ">Скорее положительное
-                <input class="review-form__input review-form__input--radio" type="radio" name="impression" id="doog-impression"
-                  value="good-impression" checked>
+                <input class="review-form__input review-form__input--radio" type="radio" name="impression"
+                  id="doog-impression" value="good-impression" checked>
               </label>
             </li>
 
             <li class="review-form__item">
               <label class="review-form__label review-form__label--button">Скорее отрицательное
-                <input class="review-form__input review-form__input--radio" type="radio" name="impression" id="bad-impression"
-                  value="bad-impression">
+                <input class="review-form__input review-form__input--radio" type="radio" name="impression"
+                  id="bad-impression" value="bad-impression">
               </label>
             </li>
 
             <li class="review-form__item">
               <label class="review-form__label review-form__label--button">Затрудняюсь ответить
-                <input class="review-form__input review-form__input--radio" type="radio" name="impression" id="mixed-impression"
-                  value="mixed-impression">
+                <input class="review-form__input review-form__input--radio" type="radio" name="impression"
+                  id="mixed-impression" value="mixed-impression">
               </label>
             </li>
           </ul>
@@ -104,39 +108,40 @@
           <ul class="review-form__list">
             <li class="review-form__item">
               <label class="review-form__label review-form__label--button">Мост Дьявола
-                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions" id="bridge"
-                  value="bridge" checked>
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions"
+                  id="bridge" value="bridge" checked>
               </label>
             </li>
 
             <li class="review-form__item">
               <label class="review-form__label review-form__label--button"> Гора-Колокол
-                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions" id="mountain"
-                  value="mountain" checked>
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions"
+                  id="mountain" value="mountain" checked>
               </label>
             </li>
 
             <li class="review-form__item">
               <label class="review-form__label review-form__label--button"> Слайд-парк
-                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions" id="park"
-                  value="park" checked>
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions"
+                  id="park" value="park" checked>
               </label>
             </li>
 
             <li class="review-form__item">
               <label class="review-form__label review-form__label--button"> Красные скалы
-                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions" id="rocks"
-                  value="rocks">
+                <input class="review-form__input review-form__input--checkbox" type="checkbox" name="attractions"
+                  id="rocks" value="rocks">
               </label>
             </li>
           </ul>
         </fieldset>
-        <div class="review-form__discription discription">
+        <div class="review-form__fieldset">
           <label class="review-form__legend">Опишите свои эмоции:
-            <textarea class="review-form__input review-form__input--textarea" name="discription" placeholder="Опишите подробно все свои восторги" rows="5" cols="20"></textarea>
+            <textarea class="review-form__input review-form__input--textarea" name="discription"
+              placeholder="Опишите подробно все свои восторги" rows="5" cols="20"></textarea>
           </label>
         </div>
-        <button class="review__button-submit button-styles">ОТПРАВИТЬ ОТЗЫВ</button>
+        <button class="review__button-submit button-submit--styles" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
         <span class="review__explaining">* — обязательные поля</span>
       </form>
     </section>
@@ -194,6 +199,23 @@
     </a>
   </footer>
 
+  <div class="modal-window modal-window--error">
+    <div class="modal-window__error error-modal">
+      <h1 class="error-modal__title error-modal__title--main ">ЧТО-ТО ПОШЛО НЕ ТАК!</h1>
+      <p class="error-modal__subtitle error-modal__subtitle--secondary">Проверьте поля, выделенные красным, скорее всего
+        вы забыли их заполнить </p>
+      <button class="error-modal__button-submit button-submit--styles" type="button">OK</button>
+    </div>
+  </div>
+
+  <div class="modal-window modal-window--success">
+    <div class="modal-window__success success-modal">
+      <h1 class="success-modal__title success-modal__title--main ">Ваш отзыв отправлен!</h1>
+      <p class="success-modal__subtitle success-modal__subtitle--secondary">Спасибо за ваше участие, ваш отзыв уже поступил
+        к нам.В ближайшее время мы опубликуем его на сайте. </p>
+      <button class="success-modal__button-submit button-submit--styles" type="button">ЗАкРЫТЬ ОКНО</button>
+    </div>
+  </div>
 
 </body>
 

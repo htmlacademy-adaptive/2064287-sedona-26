@@ -1,4 +1,14 @@
 .main-footer {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
   padding: 38px 77px 23px;
 }
 

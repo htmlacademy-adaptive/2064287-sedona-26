@@ -1,0 +1,43 @@
+.body-page {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: @font-family;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: @text-color-general;
+
+  // @media (min-width: @tablet-width) {
+  //   min-width: @tablet-width;
+  // }
+
+  // @media (min-width: @desktop-width) {
+  //   min-width: @desktop-width;
+  // }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button-submit--styles {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: @text-color-with-background;
+  text-transform: uppercase;
+  background: @background-color-general;
+}

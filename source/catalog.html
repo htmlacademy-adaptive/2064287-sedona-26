@@ -14,13 +14,13 @@
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="./img/logo-Sedona.svg" width="185" height="96"
       alt="Логотип сайта Седона.">    </a>
-    <nav class="main-header__main-nav main-nav">
-      <button class="main-nav__button" type="button">
+      <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__button" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link" href="index.html">Главная
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--current" href="index.html">Главная
           </a>
         </li>
         <li class="main-nav__item">
@@ -49,44 +49,67 @@
         курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <ul class="photos-videos__list">
         <li class="photos-videos__item product-item">
+          <a class="photos-videos__link" href="#">
           <img class="product-item__image" src="./img/catalog/catalog-road.jpg" width="" height="" alt="Дорога, закат, горы.">
+          </a>
+          <div class="product-item__label">
+          <div class="product-item__text-wrapper">
           <h3 class="product-item__title product-item__title--main">неродные просторы</h3>
           <p class="product-item__subtitle product-item__subtitle--secondary">Автор фото: Борис</p>
+          </div>
           <button class="product-item__likes-button likes-button" type="button">
             <span class="visually-hidden">Отметить "Нравится"</span>
             <span class="likes-button__counter">1350</span>
           </button>
+        </div>
         </li>
 
         <li class="photos-videos__item product-item">
+          <a class="photos-videos__link" href="#">
           <img class="product-item__image" src="./img/catalog/catalog-cactus.jpg" width="" height="" alt="Кактус на фоне гор.">
+          </a>
+          <div class="product-item__label">
+          <div class="product-item__text-wrapper">
           <h3 class="product-item__title product-item__title--main"> Местная растительность</h3>
           <p class="product-item__subtitle product-item__subtitle--secondary">Автор фото: Сергей</p>
+          </div>
           <button class="product-item__likes-button likes-button" type="button">
             <span class="visually-hidden">Отметить "Нравится"</span>
             <span class="likes-button__counter">143</span>
           </button>
+        </div>
         </li>
 
         <li class="photos-videos__item product-item">
+          <a class="photos-videos__link" href="#">
           <img class="product-item__image" src="./img/catalog/catalog-road-in-mountains.jpg" width="" height="" alt="Дорога в горах.">
+          </a>
+          <div class="product-item__label">
+          <div class="product-item__text-wrapper">
           <h3 class="product-item__title product-item__title--main"> Дорога на север</h3>
           <p class="product-item__subtitle product-item__subtitle--secondary">Автор фото: Петр</p>
+          </div>
           <button class="product-item__likes-button likes-button" type="button">
             <span class="visually-hidden">Отметить "Нравится"</span>
             <span class="likes-button__counter">96</span>
-
           </button>
+        </div>
         </li>
 
         <li class="photos-videos__item product-item">
+          <a class="photos-videos__link" href="#">
           <img class="product-item__image" src="./img/catalog/catalog-canion.jpg" width="" height="" alt="Вид на каньон.">
+          </a>
+          <div class="product-item__label">
+          <div class="product-item__text-wrapper">
           <h3 class="product-item__title product-item__title--main"> Мост дьявола</h3>
           <p class="product-item__subtitle product-item__subtitle--secondary">Автор фото: Антон</p>
+          </div>
           <button class="product-item__likes-button likes-button" type="button">
             <span class="visually-hidden">Отметить "Нравится"</span>
             <span class="likes-button__counter">254</span>
           </button>
+        </div>
         </li>
       </ul>
     </section>
@@ -95,7 +118,7 @@
       <p class="video-container__subtitle video-container__subtitle--secondary">Смотрите видеопрезентацию и скорее за
         билетами, пока они не подорожали в очередной раз!</p>
       <a class="video-container__link" href="#">
-        <img class="video-container__image" src="" width="" height="" alt="Ссылка на видео о каньоне.">
+        <img class="video-container__image" src="./img/catalog/video-about-sedona.jpg" width="" height="" alt="Ссылка на видео о каньоне.">
       </a>
     </section>
 
@@ -143,8 +166,7 @@
     </ul>
     <a class="main-footer__made-by made-by" href="https://htmlacademy.ru/intensive/adaptive">
       <p class="made-by__text">Разработано</p>
-      <svg class="made-by__image" width="27" height="35" viewBox="0 0 27 35" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
+      <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
           fill="#000" />
@@ -152,6 +174,7 @@
     </a>
   </footer>
 
+  <script src="./js/script.js"></script>
 
 </body>
 

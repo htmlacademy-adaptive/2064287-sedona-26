@@ -1,5 +1,4 @@
 .menu {
-  margin: 0;
   padding: 0;
   list-style-type: none;
   background-color: @background-color-page;
@@ -9,28 +8,76 @@
   }
 }
 
+.menu__item {
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    margin-left: 58px;
+    margin-right: 60px;
+  }
+}
+
+.menu__wrapper {
+  max-width: 240px;
+  margin-left: 47px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 110px;
+    margin-left: 0;
+    // min-width: 180px;
+    max-width: 195px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 110px;
+    margin-left: 0;
+    min-width: 244px;
+    max-width: 310px;
+  }
+}
+
 .menu__item--icon-hotels {
-  background: url("../img/index-page/menu-hotels.svg") no-repeat left;
+  background: url("../img/index-page/menu-hotels.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-position: top center;
+  }
 }
 
 .menu__item--icon-food {
-  background: url("../img/index-page/menu-food.svg") no-repeat left;
+  background: url("../img/index-page/menu-food.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-position: top center;
+  }
 }
 
 .menu__item--icon-gifts {
-  background: url("../img/index-page/menu-gifts.svg") no-repeat left;
-}
+  background: url("../img/index-page/menu-gifts.svg") no-repeat;
 
-.menu__subtitle {
-  margin: 0;
+  @media (min-width: @tablet-width) {
+    background-position: top center;
+  }
 }
 
 .menu__subtitle--main {
-  font-size: 18px;
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
 }
 
 .menu__subtitle--secondary {
+  margin: 0;
   color: @text-color-additional;
+  text-align: center;
 }

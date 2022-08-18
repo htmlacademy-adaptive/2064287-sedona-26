@@ -1,6 +1,16 @@
+.likes-button {
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
 .likes-button__counter {
   font-family: @font-family;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+
+  @media (min-width: @desktop-width) {
+    color: @text-color-with-background;
+  }
 }

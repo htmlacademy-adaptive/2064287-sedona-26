@@ -1,8 +1,28 @@
 .made-by {
+  display: flex;
   color: @text-color-general;
   text-decoration: none;
+
+  &:hover .made-by__text {
+    color: @text-hover-element;
+  }
+
+  &:hover path {
+    fill: @text-hover-element;
+  }
+
+  &:active .made-by__text {
+    color: @text-active-element;
+  }
+
+  &:active path {
+    fill: @text-active-element;
+  }
 }
 
 .made-by__text {
+  display: block;
+  align-self: center;
   margin: 0;
+  padding-right: 7px;
 }

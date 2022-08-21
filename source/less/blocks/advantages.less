@@ -125,15 +125,69 @@
 }
 
 .advantages__item--icon-first {
+  // width: 320px;
   height: 260px;
-  background-image: url("../img/index-page/picture-of-hotel.jpg");
+  background-image: url("../../img/index/picture-of-hotel/picture-of-hotel-mobile.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index/picture-of-hotel/picture-of-hotel-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+    background-image: url("../../img/index/picture-of-hotel/picture-of-hotel-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/picture-of-hotel/picture-of-hotel-tablet@2x.jpg");
+      background-size: 512px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 800px;
+    background-image: url("../../img/index/picture-of-hotel/picture-of-hotel-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/index/picture-of-hotel/picture-of-hotel-desktop2x.jpg");
+      background-size: 800px auto;
+    }
+  }
 }
 
 .advantages__item--icon-second {
+  // width: 320px;
   height: 260px;
-  background-image: url("../img/index-page/picture-of-mountaines.jpg");
+  background-image: url("../img/index/picture-of-mountains/picture-of-mountains-mobile.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/picture-of-mountains/picture-of-mountains-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 512px;
+    height: 256px;
+    background-image: url("../img/index/picture-of-mountains/picture-of-mountains-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/picture-of-mountains/picture-of-mountains-tablet@2x.jpg");
+      background-size: 512px auto;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    background-image: url("../img/index/picture-of-mountains/picture-of-mountains-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/picture-of-mountains/picture-of-mountains-desktop@2x.jpg");
+      background-size: 800px auto;
+    }
+  }
 }
 
 .advantages__main-title {

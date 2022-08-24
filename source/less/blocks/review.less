@@ -1,15 +1,17 @@
 .review__title {
   margin: 0 auto;
   margin-top: 36px;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     margin-top: 64px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 115px;
+    margin-bottom: 30px;
   }
 }
 
@@ -24,13 +26,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 50px;
   }
 }
 
 .review__title--main {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 30px;
   line-height: 26px;
 }
 
@@ -75,8 +77,16 @@
 }
 
 .review__explaining {
-  font-size: 12px;
-  margin-left: auto;
+  font-size: 14px;
+  margin-top: 24px;
   color: @text-color-additional;
   opacity: 0.6;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 162px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 224px;
+  }
 }

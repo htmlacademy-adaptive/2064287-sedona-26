@@ -20,7 +20,7 @@
   position: absolute;
   z-index: 2;
   top: 17px;
-  right: 20px;
+  right: 25px;
   width: 23px;
   height: 22px;
   padding: 0;
@@ -112,6 +112,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    margin-top: 8px;
     width: 100%;
   }
 
@@ -189,4 +190,16 @@
 
 .main-nav__link--current {
   color: @text-color-current-page;
+
+  @media (max-width: @mobile-width) {
+    color: @text-color-with-background;
+  }
+}
+
+.main-nav__link--locator {
+  margin-left: 10px;
+
+  @media (max-width: @mobile-width) {
+    margin-left: 16px;
+  }
 }

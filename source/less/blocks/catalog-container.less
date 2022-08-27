@@ -1,5 +1,13 @@
 .catalog-container__image-title {
   padding: 52px 50px 67px;
+
+  @media (min-width: @tablet-width) {
+    padding: 95px 156px 117px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 101px 370px 120px;
+  }
 }
 
 .catalog-container__photos-videos {
@@ -10,7 +18,7 @@
     padding-left: 60px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     padding: 0;
   }
 }
@@ -20,9 +28,21 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 60px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 120px;
+    margin-bottom: 65px;
+  }
+}
+
+.catalog-container__video-container {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 83px;
   }
 }

@@ -125,7 +125,6 @@ export const reloadBrowser = (done) => {
   done();
 }
 
-
 // Watcher
 
 export const watcher = () => {

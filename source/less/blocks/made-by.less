@@ -1,6 +1,6 @@
 .made-by {
   display: flex;
-  padding-top: 8px;
+  padding-top: 5px;
   color: @text-color-general;
   text-decoration: none;
 
@@ -19,16 +19,22 @@
   &:active path {
     fill: @text-active-element;
   }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 8px;
+  }
 }
 
 .made-by__text {
   display: block;
   align-self: center;
   margin: 0;
-  padding-right: 11px;
-  padding-bottom: 8px;
+  margin-top: 5px;
+  margin-left: 3px;
+  margin-right: 14px;
+  margin-bottom: 8px;
 
   @media (min-width: @tablet-width) {
-    padding-right: 14px;
+    margin-right: 14px;
   }
 }

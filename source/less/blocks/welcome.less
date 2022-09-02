@@ -1,12 +1,20 @@
 .welcome {
   padding: 90px 19px 85px;
   background-color: @background-color-for-images;
-  background-image: url("../img/background-mountain/background-mountaines-mobile.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../img/index/triangle-mobile.svg"),
+    url("../img/background-mountain/background-mountaines-mobile.jpg");
+  background-size: auto, contain;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, top;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/background-mountain/background-mountain-mobile@2x.jpg");
-    background-size: 320px auto;
+    background-image: url("../img/index/triangle-mobile.svg"),
+      url("../img/background-mountain/background-mountain-mobile@2x.jpg");
+    // background-size: auto, 320px auto;
+    background-size: auto, contain;
+
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom, top;
   }
 
   @media (min-width: @tablet-width) {

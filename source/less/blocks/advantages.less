@@ -38,10 +38,6 @@
   @media (min-width: @tablet-width) {
     margin: 40px auto;
   }
-
-  @media (min-width: @desktop-width) {
-    width: 300px;
-  }
 }
 
 .advantages__wrapper--title {
@@ -49,6 +45,12 @@
     margin: 49px auto;
     padding: 0 77px;
     padding-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 300px;
+    margin-top: 61px;
+    margin-bottom: 45px;
   }
 }
 
@@ -66,8 +68,9 @@
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     margin-top: 48px;
-    text-align: center;
     margin-bottom: 20px;
+    padding: 0 56px;
+    text-align: center;
   }
 }
 
@@ -78,6 +81,10 @@
 
   .advantages__subtitle--secondary {
     margin-bottom: 32px;
+
+    @media (min-width: @desktop-width) {
+      padding: 0 56px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -92,11 +99,17 @@
 }
 
 .advantages__wrapper--third-section {
-  margin: 26px auto;
+  margin: 28px auto;
 
   @media (min-width: @tablet-width) {
     margin-top: 41px;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 46px;
+    margin-bottom: 60px;
+    padding: 0 40px;
   }
 }
 
@@ -114,7 +127,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 272px;
+    margin: 43px auto;
+    padding: 0 62px;
   }
 }
 
@@ -125,6 +139,10 @@
   @media (min-width: @tablet-width) {
     margin: 41px auto;
     padding: 0 49px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 44px auto;
   }
 }
 
@@ -300,8 +318,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 58px;
     margin-bottom: 30px;
+    padding: 0 76px;
   }
 }
 
@@ -339,6 +357,10 @@
   @media (min-width: @tablet-width) {
     font-size: 21px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 72px;
+  }
 }
 
 .advantages__subtitle--secondary {
@@ -349,8 +371,18 @@
   color: @text-color-with-background;
   margin-top: 52px;
 
+  br {
+    display: none;
+  }
+
   @media (min-width: @tablet-width) {
     margin-top: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    br {
+      display: block;
+    }
   }
 }
 

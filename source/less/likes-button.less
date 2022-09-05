@@ -5,6 +5,10 @@
 }
 
 .likes-button__svg {
+  @media (min-width: @tablet-width) {
+    // margin-left: 3px;
+  }
+
   @media (min-width: @desktop-width) {
     fill: rgba(255, 255, 255);
     opacity: 1;
@@ -16,8 +20,15 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  padding-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 6px;
+  }
+
 
   @media (min-width: @desktop-width) {
+    padding-left: 4px;
     color: @text-color-with-background;
   }
 }

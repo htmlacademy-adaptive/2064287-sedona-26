@@ -147,6 +147,7 @@
 }
 
 .advantages__item {
+  position: relative;
   background: @background-color-additional;
 }
 
@@ -214,8 +215,14 @@
   }
 }
 
-.advantages__item--border {
-  border-bottom: 1px solid rgba(214, 214, 214, 1);
+.advantages__item--border::before {
+  position: absolute;
+  top: -1px;
+  left: 15px;
+  content: "";
+  width: calc(100% - 36px);
+  height: 1px;
+  background-color: rgb(214, 214, 214);
 
   @media (min-width: @tablet-width) {
     border-bottom: none;

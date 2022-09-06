@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-top: 1px solid rgba(219, 219, 219, 1);
 
   @media (min-width: @tablet-width) {
     border: none;
@@ -10,6 +9,7 @@
 }
 
 .review-form__fieldset {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,12 +17,9 @@
   padding: 0 20px;
   padding-bottom: 24px;
   border: none;
-  border-bottom: 1px solid rgba(219, 219, 219, 1);
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    border-top: 1px solid rgba(219, 219, 219, 1);
-    border-bottom: none;
   }
 }
 
@@ -35,12 +32,10 @@
   }
 }
 
-
 .review-form__fieldset:first-child {
   @media (min-width: @tablet-width) {
     width: 40%;
     border: none;
-    border-right: 1px solid rgba(219, 219, 219, 1);
   }
 }
 
@@ -124,6 +119,20 @@
   }
 }
 
+.review-form__legend--input-first::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(229, 229, 229);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
 .review-form__legend--input-second {
   padding: 24px 0 19px;
   margin-left: -2px;
@@ -139,6 +148,29 @@
   }
 }
 
+.review-form__legend--input-second::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(229, 229, 229);
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: -40px;
+    width: 1px;
+    height: 100%;
+  }
+
+  @media (min-width: @tablet-width) {
+    top: 19px;
+    left: -63px;
+    height: 338px;
+  }
+}
+
 .review-form__legend--textarea {
   width: 100%;
   padding: 4px 0 25px;
@@ -149,6 +181,46 @@
 
   @media (min-width: @desktop-width) {
     padding: 4px 0 48px;
+  }
+}
+
+.review-form__legend--textarea::before {
+  position: absolute;
+  content: "";
+  top: -16px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(229, 229, 229);
+
+  @media (min-width: @tablet-width) {
+    top: 17px;
+    left: 0;
+    width: 123px;
+    height: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 17px;
+    width: 280px;
+  }
+}
+
+.review-form__legend--textarea::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(229, 229, 229);
+
+  @media (min-width: @tablet-width) {
+    top: 17px;
+    right: 0;
+    width: 123px;
+    height: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 17px;
+    width: 280px;
   }
 }
 
@@ -168,6 +240,48 @@
   }
 }
 
+.review-form__legend--radiobutton::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+  width: calc(100% + 31px);
+  height: 1px;
+  background-color: rgb(229, 229, 229);
+
+  @media (min-width: @tablet-width) {
+    top: 13px;
+    left: 0;
+    width: 123px;
+    height: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 10px;
+    width: 280px;
+    left: -51px;
+  }
+}
+
+.review-form__legend--radiobutton::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(229, 229, 229);
+
+  @media (min-width: @tablet-width) {
+    top: 13px;
+    right: 0;
+    width: 123px;
+    height: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 10px;
+    width: 280px;
+  }
+}
+
+
 .review-form__legend--checkbox {
   padding: 6px 0;
   margin-bottom: 13px;
@@ -181,6 +295,44 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 60px;
+  }
+}
+
+.review-form__legend--checkbox::before {
+  position: absolute;
+  content: "";
+  top: -17px;
+  left: 0;
+  width: calc(100% + 31px);
+  height: 1px;
+  background-color: rgb(229, 229, 229);
+
+  @media (min-width: @tablet-width) {
+    top: 26px;
+    left: 0;
+    width: 123px;
+    height: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+  }
+}
+
+.review-form__legend--checkbox::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(229, 229, 229);
+
+  @media (min-width: @tablet-width) {
+    top: 26px;
+    right: 0;
+    width: 123px;
+    height: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
   }
 }
 

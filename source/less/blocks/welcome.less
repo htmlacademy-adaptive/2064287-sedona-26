@@ -19,23 +19,27 @@
 
   @media (min-width: @tablet-width) {
     padding: 77px 154px 91px;
-
-    background-image: url("../img/background-mountain/background-mountain-tablet.jpg");
+    background-size: auto, contain;
+    background-position: bottom, top;
+    background-image: url("../img/index/triangle-tablet.svg"), url("../img/background-mountain/background-mountain-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-mountain/background-mauntain-tablet@2x.jpg");
-      background-size: 768px auto;
+      background-image: url("../img/index/triangle-tablet.svg"), url("../img/background-mountain/background-mauntain-tablet@2x.jpg");
+      background-size: auto, contain;
+      background-position: bottom, top;
     }
   }
 
   @media (min-width: @desktop-width) {
     padding: 78px 370px 90px;
-
-    background-image: url("../img/background-mountain/background-mountain-desktop.jpg");
+    background-size: auto, contain;
+    background-position: bottom, top;
+    background-image: url("../img/index/triangle-desktop.svg"), url("../img/background-mountain/background-mountain-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/background-mountain/background-mountain-desktop@2x.jpg");
-      background-size: 1200px auto;
+      background-image: url("../img/index/triangle-desktop.svg"), url("../img/background-mountain/background-mountain-desktop@2x.jpg");
+      background-size: auto, contain;
+      background-position: bottom, top;
     }
   }
 }

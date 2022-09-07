@@ -1,4 +1,6 @@
 .advantages {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     padding: 0;
   }
@@ -229,12 +231,16 @@
   }
 }
 
-.advantages__item--decorating::before {
+.advantages__item--decorating {
+  display: block;
   position: absolute;
   content: "";
-  background-image: url("..img/index/decorating-for-ul.svg");
+  // background-color: black;
+  background-image: url("..img/index/decore.svg");
+  // background-repeat: no-repeat;
+  // background-position: center;
   width: 100%;
-  z-index: 2;
+  height: 37px;
   top: 0;
   left: 0;
   // background-image: url("..img/index/decorating-for-ul.svg");

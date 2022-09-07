@@ -387,6 +387,19 @@
   font-size: 18px;
   line-height: 26px;
   background-color: @background-color-product-features;
+
+  &:hover {
+    background-color: rgb(229, 229, 229);
+  }
+
+  &:focus {
+    outline: 4px solid @background-color-product-features;
+    background-color: @background-color-page;
+  }
+
+  &:active {
+    background-color: @background-color-page;
+  }
 }
 
 .review-form__input--first {
@@ -411,6 +424,10 @@
   display: flex;
   flex-direction: row;
   width: 280px;
+
+  &:focus-within {
+    outline: 4px solid @background-color-product-features;
+  }
 
   @media (min-width: @desktop-width) {
     width: 402px;
@@ -468,6 +485,14 @@
   border-radius: 50%;
   box-sizing: border-box;
   background-color: @background-color-product-features;
+
+  &:hover {
+    background-color: rgb(229, 229, 229);
+  }
+
+  &:active {
+    background-color: rgb(213, 213, 213);
+  }
 }
 
 .review-form__span--control-mark-check {
@@ -479,6 +504,14 @@
   margin: 0;
   box-sizing: border-box;
   background-color: @background-color-product-features;
+
+  &:hover {
+    background-color: rgb(229, 229, 229);
+  }
+
+  &:active {
+    background-color: rgb(213, 213, 213);
+  }
 }
 
 .review-form__span--control-label {

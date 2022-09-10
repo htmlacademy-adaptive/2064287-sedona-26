@@ -16,8 +16,15 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
+  padding-left: 10px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 6px;
+  }
+
 
   @media (min-width: @desktop-width) {
+    padding-left: 4px;
     color: @text-color-with-background;
   }
 }

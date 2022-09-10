@@ -27,6 +27,14 @@
   cursor: pointer;
   border: none;
   background-color: @background-color-page;
+
+  &:hover .main-nav__button::before {
+    opacity: 0.6;
+  }
+
+  &:active .main-nav__button::before {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--closed .main-nav__button::before {
@@ -38,10 +46,6 @@
   height: 4px;
   background-color: @background-color-general;
   box-shadow: 0 9px 0 0 @background-color-general, 0 18px 0 0 @background-color-general;
-
-  &:hover::before {
-    opacity: 0.6;
-  }
 }
 
 .main-nav--opened .main-nav__button {
@@ -78,6 +82,11 @@
   &:hover::before,
   &:hover::after {
     opacity: 0.6;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
   }
 }
 
@@ -128,7 +137,7 @@
   height: 7px;
   bottom: 0;
   left: 0;
-  box-shadow: inset 4px 0 7px -2px fade(#000000, 40%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 
   @media (min-width: @mobile-width) {
     display: none;
@@ -153,13 +162,26 @@
   margin-right: auto;
 }
 
+
+.main-nav--opened .main-nav__link {
+  padding-bottom: 11px;
+
+  &:hover {
+    background-color: @background-hover-elements;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(84, 150, 189);
+  }
+}
+
 .main-nav__link {
   display: block;
   margin: 0;
   text-align: center;
   box-sizing: border-box;
   padding-top: 17px;
-  padding-bottom: 12px;
   border-top: 1px solid rgba(1, 1, 1, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: @text-color-with-background;
@@ -171,6 +193,7 @@
     text-decoration: none;
     border: none;
     padding: 0;
+    padding-left: 4px;
   }
 
   @media (min-width: @desktop-width) {
@@ -197,9 +220,13 @@
 }
 
 .main-nav__link--locator {
-  margin-left: 10px;
-
   @media (max-width: @mobile-width) {
-    margin-left: 16px;
+    margin-left: 15px;
+  }
+}
+
+.main-nav--opened .main-nav__link--locator {
+  @media (max-width: @mobile-width) {
+    margin-left: 0;
   }
 }

@@ -1,21 +1,27 @@
 .main-header {
   position: relative;
   display: flex;
-  height: 56px;
+  padding: 28px 0;
   justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .main-header__main-nav {
   @media (min-width: @tablet-width) {
     display: flex;
     margin: 10px;
+    margin-bottom: 16px;
     margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     margin: 10px;
-    margin-top: 13px;
+    margin-top: 11px;
+    margin-bottom: 14px;
     margin-left: 2px;
   }
 }
@@ -25,6 +31,7 @@
   margin: auto;
   left: 0;
   right: 0;
+  top: 0;
   text-align: center;
   z-index: 1;
 }

@@ -1,7 +1,6 @@
 .main-header {
   position: relative;
   display: flex;
-  padding: 28px 0;
   justify-content: center;
 
   @media (min-width: @tablet-width) {
@@ -23,6 +22,16 @@
     margin-top: 11px;
     margin-bottom: 14px;
     margin-left: 2px;
+  }
+}
+
+.main-header__logo {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .main-header__logo-image {
+    outline: 5px auto -webkit-focus-ring-color;
   }
 }
 

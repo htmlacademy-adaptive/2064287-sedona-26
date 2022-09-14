@@ -15,21 +15,9 @@
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-areas: "first second second"
-      "third third third"
-      "fourth fourth  fiveth"
-      "sixth seventh eighth";
-    grid-template-columns: 33.3% 33.3% 33.3%;
-  }
-
-  @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-areas: "first second second"
-      "third third third"
-      "fourth fourth  fiveth"
-      "sixth seventh eighth";
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
 
@@ -62,7 +50,8 @@
 
 
   @media (min-width: @tablet-width) {
-    margin: 40px auto;
+    width: 27.3%;
+    margin: 41px auto;
     margin-bottom: 20px;
     padding: 0 21px;
   }
@@ -85,18 +74,20 @@
     margin-bottom: 32px;
 
     @media (min-width: @desktop-width) {
-      padding: 0 56px;
+      padding: 0 44px;
     }
   }
 
   @media (min-width: @tablet-width) {
+    width: 25.3%;
     margin-top: 42px;
-    margin-bottom: 34px;
+    margin-bottom: 10px;
+    order: 1;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 51px;
-    margin-bottom: 32px;
+    margin-bottom: 0;
   }
 }
 
@@ -151,69 +142,9 @@
 .advantages__item {
   position: relative;
   background: @background-color-additional;
-}
-
-.advantages__item--order-first {
-  order: 1;
 
   @media (min-width: @tablet-width) {
-    grid-area: first;
-  }
-}
-
-.advantages__item--order-second {
-  order: 2;
-
-  @media (min-width: @tablet-width) {
-    grid-area: second;
-  }
-}
-
-.advantages__item--order-third {
-  order: 3;
-
-  @media (min-width: @tablet-width) {
-    grid-area: third;
-  }
-}
-
-.advantages__item--order-fourth {
-  order: 4;
-
-  @media (min-width: @tablet-width) {
-    grid-area: fiveth;
-  }
-}
-
-.advantages__item--order-fiveth {
-  order: 5;
-
-  @media (min-width: @tablet-width) {
-    grid-area: fourth;
-  }
-}
-
-.advantages__item--order-sixth {
-  order: 6;
-
-  @media (min-width: @tablet-width) {
-    grid-area: sixth;
-  }
-}
-
-.advantages__item--order-seventh {
-  order: 7;
-
-  @media (min-width: @tablet-width) {
-    grid-area: seventh;
-  }
-}
-
-.advantages__item--order-eighth {
-  order: 8;
-
-  @media (min-width: @tablet-width) {
-    grid-area: eighth;
+    display: flex;
   }
 }
 
@@ -242,6 +173,10 @@
   height: 37px;
   top: -17px;
   left: 0;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .advantages__item--main {
@@ -252,7 +187,7 @@
   background: @background-color-page;
 }
 
-.advantages__item--icon-first {
+.advantages__picture--icon-first {
   height: 260px;
   background-image: url("../img/index/picture-of-hotel/picture-of-hotel-mobile.jpg");
   background-repeat: no-repeat;
@@ -284,7 +219,7 @@
   }
 }
 
-.advantages__item--icon-second {
+.advantages__picture--icon-second {
   height: 260px;
   background-image: url("../img/index/picture-of-mountains/picture-of-mountains-mobile.jpg");
   background-repeat: no-repeat;
@@ -425,5 +360,27 @@
     margin-top: 50px;
     margin-right: -2px;
     margin-bottom: 79px;
+  }
+}
+
+.advantages__sublist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.advantages__item--sublist {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 33.3%;
   }
 }

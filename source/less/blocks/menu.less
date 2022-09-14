@@ -4,9 +4,7 @@
   background-color: @background-color-page;
 
   @media (min-width: @tablet-width) {
-    display: grid;
-    grid-template-areas: "first second third";
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    display: flex;
   }
 }
 
@@ -14,6 +12,7 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
+    width: 33.3%;
     margin-bottom: 0;
   }
 
@@ -26,91 +25,90 @@
 
 .menu__wrapper {
   @media (min-width: @tablet-width) {
-    margin-top: 110px;
+    padding-top: 110px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 99px;
+    padding-top: 99px;
     margin-left: 0;
   }
 }
 
-.menu__item--icon-hotels {
+.menu__wrapper--icon-hotels {
   background: url("../img/index/menu-hotel.svg") no-repeat;
   background-position: 20px 0;
 
   @media (min-width: @tablet-width) {
-    grid-area: first;
     background: url("../img/index/menu-hotel-tablet.svg") no-repeat;
-    background-position: 89px 22px;
+    background-position: 49% 13%;
   }
 
   @media (min-width: @desktop-width) {
-    background-position: 102px 10px;
+    background-position: 49% 7%;
   }
 }
 
-.menu__item--icon-food {
+.menu__wrapper--icon-food {
   background: url("../img/index/menu-food.svg") no-repeat;
   background-position: 20px 0;
 
   @media (min-width: @tablet-width) {
-    grid-area: second;
     background: url("../img/index/menu-food-tablet.svg") no-repeat;
-    background-position: 89px 25px;
+    background-position: 49% 15%;
   }
 
   @media (min-width: @desktop-width) {
-    background-position: 104px 13px;
+    background-position: 47% 10%;
   }
 }
 
-.menu__item--icon-gifts {
+.menu__wrapper--icon-gifts {
   background: url("../img/index/menu-gift.svg") no-repeat;
   background-position: 20px 0;
 
   @media (min-width: @tablet-width) {
-    grid-area: third;
     background: url("../img/index/menu-gift-tablet.svg") no-repeat;
-    background-position: 94px 19px;
+    background-position: 49% 13%;
   }
 
   @media (min-width: @desktop-width) {
-    background-position: 108px 7px;
+    background-position: 49% 5%;
   }
 }
 
 .menu__wrapper--first-section {
-  margin-left: 69px;
+  padding-left: 69px;
   padding-right: 13px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
     padding: 0;
+    padding-top: 110px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 0;
+    padding-top: 99px;
   }
 }
 
 .menu__wrapper--second-section {
-  margin-left: 72px;
+  padding-left: 72px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 3px;
+    margin-bottom: 2px;
+    padding-left: 0;
   }
 }
 
 .menu__wrapper--third-section {
-  margin-left: 65px;
+  padding-left: 65px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 0;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -181,8 +179,8 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media (min-width: @desktop-width) {

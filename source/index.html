@@ -47,7 +47,7 @@
   <div class="body-wrapper">
     <header class="main-header">
       <h1 class="visually-hidden">Сайт о каньоне Седона</h1>
-      <a class="main-header__logo">
+      <a class="main-header__logo" href="#">
         <img class="main-header__logo-image" src="./img/logo-Sedona.svg" srcset="./img/logo-Sedona@2x.svg" width="185"
           height="96" alt="Логотип сайта Седона.">
       </a>
@@ -57,7 +57,7 @@
         </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--current">Главная
+            <a class="main-nav__link main-nav__link--current" href="#">Главная
             </a>
           </li>
           <li class="main-nav__item">
@@ -65,12 +65,11 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--locator" href="form.html">Форма Отзыва
+            <a class="main-nav__link" href="form.html">Форма Отзыва
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--locator" href="https://htmlacademy.ru/intensive/adaptive">HTML
-              ACADEMY
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY
             </a>
           </li>
         </ul>
@@ -95,7 +94,7 @@
         </div>
         <ol class="advantages__list">
           <li
-            class="advantages__item advantages__item--order-first  advantages__item--main advantages__item--decorating">
+            class="advantages__item advantages__item--main advantages__item--decorating advantages__item--picture-first">
             <div class="advantages__wrapper advantages__wrapper--first-section">
               <h3 class="advantages__title advantages__title--main advantages__title--another-background ">
                 НАСТОЯЩИЙ ГОРОДОК
@@ -104,60 +103,27 @@
               <p class="advantages__subtitle advantages__subtitle--secondary advantages__subtitle--another-background">
                 СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
+            <div class="advantages__picture advantages__picture--icon-first"></div>
           </li>
-          <li class="advantages__item advantages__item--order-fourth advantages__item--main">
-            <div class="advantages__wrapper advantages__wrapper--second-section">
-              <h3 class="advantages__title advantages__title--main advantages__title--another-background">ТАМ ЕСТЬ <br>
-                Мост дьявола </h3>
-              <span class="advantages__subnumber advantages__subnumber--another-background">— №2 —</span>
-              <p class="advantages__subtitle advantages__subtitle--secondary advantages__subtitle--another-background">
-                Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
-          </li>
-          <li class="advantages__item advantages__item--order-sixth">
-            <div class="advantages__wrapper advantages__wrapper--third-section">
-              <h3 class="advantages__title advantages__title--main">НЕБОЛЬШАЯ ПЛОЩАДЬ </h3>
-              <span class="advantages__subnumber advantages__subnumber--secondary">— №3 —</span>
-              <p class="advantages__subtitle advantages__subtitle--secondary">
-                ВСЕ интересные места находятся очень близко
-              </p>
-            </div>
-          </li>
-          <li class="advantages__item advantages__item--order-seventh advantages__item--border">
-            <div class="advantages__wrapper advantages__wrapper--fourth-section">
-              <h3 class="advantages__title advantages__title--main">КРАСИВАЯ ДОРОГА</h3>
-              <span class="advantages__subnumber advantages__subnumber--secondary">— №4 —</span>
-              <p class="advantages__subtitle advantages__subtitle--secondary">
-                ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-            </div>
-          </li>
-          <li class="advantages__item advantages__item--order-eighth advantages__item--border">
-            <div class="advantages__wrapper advantages__wrapper--fiveth-section">
-              <h3 class="advantages__title advantages__title--main">МАЛО ТУРИСТОВ </h3>
-              <span class="advantages__subnumber advantages__subnumber--secondary">— №5 —</span>
-              <p class="advantages__subtitle advantages__subtitle--secondary">
-                Большинство едет в гранд каньон и толпится там</p>
-            </div>
-          </li>
-          <li class="advantages__item advantages__item--order-third advantages__item--menu">
+          <li class="advantages__item advantages__item--menu">
             <ul class="advantages__menu menu">
-              <li class="menu__item menu__item--icon-hotels">
-                <div class="menu__wrapper menu__wrapper--first-section">
+              <li class="menu__item">
+                <div class="menu__wrapper menu__wrapper--first-section menu__wrapper--icon-hotels">
                   <h3 class="menu__subtitle menu__subtitle--main-first menu__subtitle--main">Жилье</h3>
                   <p class="menu__subtitle menu__subtitle--secondary-first menu__subtitle--secondary">
                     Рекомендуем пожить в настоящем мотеле, все как в кино!
                   </p>
                 </div>
               </li>
-              <li class="menu__item menu__item--icon-food">
-                <div class="menu__wrapper menu__wrapper--second-section">
+              <li class="menu__item ">
+                <div class="menu__wrapper menu__wrapper--second-section menu__wrapper--icon-food">
                   <h3 class="menu__subtitle menu__subtitle--main-second menu__subtitle--main">Еда</h3>
                   <p class="menu__subtitle menu__subtitle--secondary-second menu__subtitle--secondary">Всегда
                     заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
                 </div>
               </li>
               <li class="menu__item menu__item--icon-gifts">
-                <div class="menu__wrapper menu__wrapper--third-section">
+                <div class="menu__wrapper menu__wrapper--third-section menu__wrapper--icon-gifts">
                   <h3 class="menu__subtitle menu__subtitle--third menu__subtitle--main">Сувениры</h3>
                   <p class="menu__subtitle menu__subtitle--secondary-third menu__subtitle--secondary">Не только
                     китайского, <br> но и местного производства!</p>
@@ -165,9 +131,45 @@
               </li>
             </ul>
           </li>
-          <li class="advantages__item advantages__item--order-second advantages__item--icon-first">
+          <li class="advantages__item advantages__item--main advantages__item--picture-second">
+            <div class="advantages__wrapper advantages__wrapper--second-section">
+              <h3 class="advantages__title advantages__title--main advantages__title--another-background">ТАМ ЕСТЬ
+                &nbsp;<br>
+                Мост дьявола </h3>
+              <span class="advantages__subnumber advantages__subnumber--another-background">— №2 —</span>
+              <p class="advantages__subtitle advantages__subtitle--secondary advantages__subtitle--another-background">
+                Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="advantages__picture advantages__picture--icon-second"></div>
           </li>
-          <li class="advantages__item advantages__item--order-fiveth advantages__item--icon-second">
+          <li class="advantages__item">
+            <ul class="advantages__sublist">
+              <li class="advantages__item advantages__item--sublist">
+                <div class="advantages__wrapper advantages__wrapper--third-section">
+                  <h3 class="advantages__title advantages__title--main">НЕБОЛЬШАЯ ПЛОЩАДЬ </h3>
+                  <span class="advantages__subnumber advantages__subnumber--secondary">— №3 —</span>
+                  <p class="advantages__subtitle advantages__subtitle--secondary">
+                    ВСЕ интересные места находятся очень близко
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--border advantages__item--sublist">
+                <div class="advantages__wrapper advantages__wrapper--fourth-section">
+                  <h3 class="advantages__title advantages__title--main">КРАСИВАЯ ДОРОГА</h3>
+                  <span class="advantages__subnumber advantages__subnumber--secondary">— №4 —</span>
+                  <p class="advantages__subtitle advantages__subtitle--secondary">
+                    ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+                </div>
+              </li>
+              <li class="advantages__item advantages__item--border advantages__item--sublist">
+                <div class="advantages__wrapper advantages__wrapper--fiveth-section">
+                  <h3 class="advantages__title advantages__title--main">МАЛО ТУРИСТОВ </h3>
+                  <span class="advantages__subnumber advantages__subnumber--secondary">— №5 —</span>
+                  <p class="advantages__subtitle advantages__subtitle--secondary">
+                    Большинство едет в гранд каньон и толпится там</p>
+                </div>
+              </li>
+            </ul>
           </li>
         </ol>
       </section>
